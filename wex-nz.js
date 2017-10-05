@@ -100,7 +100,7 @@ WEXNZ.prototype.makeRequest = function(method, params, callback) {
 
 WEXNZ.prototype.makePublicApiRequest = function(pair, method, callback) {
   this._sendRequest({
-    url: this.publicApiUrl + pair + '/' + method
+    url: this.publicApiUrl + method + '/' + pair
   }, callback);
 };
 
